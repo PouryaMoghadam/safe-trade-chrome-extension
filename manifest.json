@@ -1,7 +1,7 @@
 {
     "name": "Safe Trade Assistant",
     "description": "Login and Trade safely in crypto currency exchanges ",
-    "version": "1.0",
+    "version": "0.1.0",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
