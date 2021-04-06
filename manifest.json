@@ -1,0 +1,25 @@
+{
+    "name": "Safe Trade Assistant",
+    "description": "Login and Trade safely in crypto currency exchanges ",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "views/main-pop.html",
+        "default_icon": {
+            "16": "/views/assets/images/icon.png",
+            "32": "/views/assets/images/icon.png",
+            "48": "/views/assets/images/icon.png",
+            "128": "/views/assets/images/icon.png"
+        }
+    },
+    "icons": {
+        "16": "/views/assets/images/icon.png",
+        "32": "/views/assets/images/icon.png",
+        "48": "/views/assets/images/icon.png",
+        "128": "/views/assets/images/icon.png"
+    }
+}
