@@ -1,5 +1,129 @@
 body {
     background-color: white;
+    height: auto;
+    width: auto;
+}
+
+.zero-space {
+    margin: 0;
+    padding: 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.container {
     height: 400px;
     width: 600px;
+}
+
+.container_footer {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    height: 50px;
+    width: 600px;
+    border-top: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container_header {
+
+}
+
+.container_onOff {
+    height: 34px;
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_onOff_section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container_onOff span {
+    line-height: 34px;
+    vertical-align: center;
+    font-size: 16px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.container_activeExchanges {
+
+}
+
+
+.switch {
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }

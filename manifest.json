@@ -6,7 +6,19 @@
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": ["storage"],
+    "permissions": ["storage", "activeTab", "scripting", "webRequest"],
+    "optional_permissions": ["tabs"],
+    "host_permissions": [
+        "https://www.myip.com/",
+        "http://*/*",
+        "https://*/*",
+        "http://*/",
+        "https://*/"
+    ],
+    "web_accessible_resources": [{
+        "resources": ["views/wrong-ip.html"],
+        "matches": ["<all_urls>"]
+    }],
     "action": {
         "default_popup": "views/main-pop.html",
         "default_icon": {
